@@ -1,0 +1,644 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+/*cierres de FONTS*/
+
+/*random*/
+#separador{
+    height: 2px;
+    width: 90%;
+    background-color: rgb(214, 212, 212);
+}
+.contenedorTres #separador{
+    margin: 40px;
+}
+/*random*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/*HEADER*/
+
+header{
+    
+   width: 100%;
+   height: 125px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color:rgb(252, 252, 252);
+   justify-content: space-between;
+   position: fixed;
+   z-index:1000 ;
+   align-content: center;
+   align-items: center;   
+   flex-direction: column;
+justify-content: center;
+}
+
+.logo{
+    margin-left: 50px;
+    display: flex;  
+    position: relative;
+  right: -100px; /* Mueve el ul a la izquierda */
+}
+
+
+ul{
+ margin-right: 50px;
+
+    width: 300px;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: right;
+    position: relative;
+  left: -100px; /* Mueve el ul a la izquierda */
+
+}
+li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif; 
+}
+li a:hover{
+    text-decoration: underline;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Mostrar el menú desplegable cuando se pasa el cursor sobre "Nosotros" */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/*fin de HEADER*/
+
+
+
+
+
+/*CONTENEDOR*/
+.contenedorUno{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../media/img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 50% 100%, 0 79%);
+    padding: 20px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: column;
+   
+}
+#description span{
+    color: rgb(255, 117, 4)
+}
+.DIVS{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 400px;
+}
+.divOne{
+    margin-left: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+.divDos{
+    margin-left: 50px;
+    align-items: flex-start;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.titulo h1{
+    font-size: 70px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    
+}
+.titulo span{
+    color: #5B9CD2;
+}
+.slogan span{
+    color: #5B9CD2;
+}
+.slogan h2{
+    font-size: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    margin-top: 1000px;
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  width: 210px;
+  margin-left: 60px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+/*FIN de contenedor Uno*/
+
+
+
+
+
+/*Contenedor DOS*/
+.contenedorDos{
+
+    height: 700px;
+    width: 100%;
+    padding: 35px;
+    margin-top: 60px;
+   display: flex;
+    justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
+}
+.contenedorDos h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #5B9CD2;
+}
+
+.servicios{
+    display: flex;
+   
+ 
+}
+
+#carta{
+
+width: 300px;
+height: 500px;
+margin: 30px;
+padding: 10px;
+}
+
+#foto{
+    display: flex;
+    align-items: flex-end;
+justify-content: center;
+    height: 40%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#foto h1{
+    color: #5B9CD2;
+}
+#description{
+    margin-top: 20px;
+
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+.carta #foto{
+    background-image: url(../media/img/logoUno.png);
+    background-position: center;
+    background-size: contain;
+ 
+    height: 40%;
+    width: 100%;
+}
+
+.cartDos #foto{
+    background-image: url(../media/img/logoDos.png);
+    background-position: center;
+    background-size: contain;
+    height: 40%;
+    width: 100%;
+}
+.cartTres #foto{
+    background-image: url(../media/img/logoTres.png);
+    background-position: center;
+    background-size: contain;
+    height: 40%;
+    width: 100%;
+}
+
+
+
+/*Contenedor DOS fin*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTENEDOR TRES*/
+.contenedorTres{
+    width: 100%;
+    height: 2300px;
+    padding: 100px 150px 0px 150px;
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+
+.contenedorTres span{
+    color: rgb(255, 117, 4)
+}
+
+.lados{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+justify-content: center
+}
+.lados .leftSide{
+    margin-right: 30px;
+    
+}
+.uno .leftSide h1{
+    font-family: "Kanit", sans-serif;
+}
+.uno .rightSide p{
+    font-family: 'Montserrat', sans-serif;
+}
+.uno .rightSide h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.dos .leftSide h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.dos .leftSide p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.dos .rightSide h1{
+    font-family: "Kanit", sans-serif;
+}
+.lados .rightSide{
+    margin-left: 30px;
+}
+
+.intUno{
+    width: 600px;
+    height: 300px;
+
+}
+
+.uno .blob{
+    background-image: url(https://images.unsplash.com/photo-1509839862600-309617c3201e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.uno .blob:hover{
+    background-image: url(../media/img/4.jpg);
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.dos .blob{
+    background-image: url(../media/img/3.jpg);
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.dos .blob:hover{
+    background-image: url(../media/img/4.jpg);
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+/*Contenedor TRES FIN */
+
+/*Contenedor CUATRO*/
+
+
+.contenedorCuatro{
+    padding: 50px;
+    height: 600px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.contenedorCuatro span{
+    color: rgb(255, 117, 4)
+}
+.right{
+    margin-left: 40px ;
+}
+.contenedorCuatro h1{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.contenedorCuatro h2{
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.contenedorCuatro h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #5B9CD2;
+
+}.contenedorCuatro p{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+.contenedorCinco{
+    margin-top: 100px;
+    background-color: #5B9CD2;
+    width: 100%;
+    height: 700px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.contenedorCinco h1{
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.contenedorCinco .izq{
+    width: 80%;
+}
+.contenedorCinco .der{
+    width:20%;
+}
+.der ul h3{
+    color: white;
+    font-family: "Roboto", sans-serif; 
+
+}
+.der ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.der ul li{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+/*DESPLAZAMIENTOS SCROLL*/
+@keyframes mover{
+    0%{
+        transform: translate(100% ) ;
+    }   
+}
+@keyframes moverDos{
+    0%{
+        transform: translate(0% )
+         ;
+    }
+}
+
